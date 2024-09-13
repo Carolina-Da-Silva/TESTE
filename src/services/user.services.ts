@@ -1,4 +1,4 @@
-import { database  } from "../utils/database"
+import { database  } from "../database"
 
 export const findUserByLoginPassword = async (username: string, password: string) => {
   const db = await database()

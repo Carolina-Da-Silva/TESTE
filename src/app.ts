@@ -1,7 +1,7 @@
 import express, { RequestHandler } from 'express';
-import * as userServices from './services/user.services.ts';
+import * as userServices from './services/user.services';
 import { randomUUID } from 'crypto';
-import { database } from './utils/database.ts';
+import { database } from './database';
 
 const port = 4400
 const app = express()
