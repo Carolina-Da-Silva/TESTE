@@ -12,12 +12,12 @@
   <div class="container">
     <h1>Projeto-Node</h1>
     <h3>-testando a página</h3>
-
+<!-- 
     <form>
       <input type="text" name="name" placeholder="Nome" required>
       <input type="email" name="email" placeholder="Email" required>
       <button type="submit">Cadastrar</button>
-    </form>
+    </form> -->
 
     <table>
       <thead>
@@ -37,21 +37,21 @@
   <script>
     const form = document.querySelector('form')
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault()
+    // form.addEventListener('submit', async (event) => {
+    //   event.preventDefault()
 
-      const name = form.name.value
-      const email = form.email.value
+    //   const name = form.name.value
+    //   const email = form.email.value
 
-      await fetch('/users', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email })
-      })
+    //   await fetch('/users', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ name, email })
+    //   })
 
-      form.reset()
-      fetchData()
-    })
+    //   form.reset()
+    //   fetchData()
+    // })
 
     const tbody = document.querySelector('tbody')
 
